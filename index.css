@@ -3,21 +3,25 @@ body {
     min-height: 100vh;
     background: #121215;
     color: #e8e8ee;
-    font-family: refrigerator, Inter, system-ui, sans-serif ;
+    font-family: refrigerator, Inter, system-ui, sans-serif, bold;
     overflow: hidden;
 }
 
 body.index-page h2 {
-    font-size: clamp(1.7rem, 4vw, 2.2rem);
+    font-size: clamp(2rem, 5vw, 2.6rem);
 }
 
 body.index-page p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     max-width: 34rem;
 }
 
 body.index-page .page-card {
     padding: 1.75rem 2rem;
+}
+
+body.front-page .page-card {
+    margin-top: 40px;
 }
 
 body.index-page .icon-image {
@@ -53,7 +57,7 @@ body::before {
     justify-content: center;
     padding: 1.5rem 1.5rem 2rem;
     opacity: 0;
-    transform: translateY(40px) scale(0.98);
+    transform: translateY(80px) scale(0.98);
     animation: appEnter 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) 0.3s forwards;
     z-index: 1;
 }
@@ -136,11 +140,11 @@ body::before {
 h1,
 h2 {
     margin: 0;
-    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
     letter-spacing: 0.02em;
     color: #f5f5f5;
     text-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
-    font-family: refrigerator, Inter, system-ui, sans-serif;
+    font-family: refrigerator, Inter, system-ui, sans-serif, bold;
 }
 
 p {
@@ -148,6 +152,8 @@ p {
     color: #c8c8d0;
     line-height: 1.75;
     max-width: 38rem;
+    font-size: 1.05rem;
+    font-family: refrigerator, Inter, system-ui, sans-serif, bold;
 }
 
 @keyframes pageFade {
@@ -162,10 +168,10 @@ p {
 @keyframes appEnter {
     0% {
         opacity: 0;
-        transform: translateY(40px) scale(0.98);
+        transform: translateY(200px) scale(0.98);
     }
     100% {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: translateY(80px) scale(1);
     }
 }
