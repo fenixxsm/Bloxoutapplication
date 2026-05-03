@@ -121,6 +121,7 @@ body::before {
     cursor: pointer;
     font-size: 0.95rem;
     text-decoration: none;
+    font-family: refrigerator, Inter, system-ui, sans-serif, bold;
     transition: transform 0.24s ease, background 0.24s ease, box-shadow 0.24s ease;
 }
 
